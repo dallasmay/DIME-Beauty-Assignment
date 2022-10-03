@@ -21,7 +21,12 @@ const ProductPage = () => {
 
   return (
     <div className={styles["product-page"]}>
-      <ProductCard />
+      <div className={styles["product-grid-container"]}>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
     </div>
   );
 };

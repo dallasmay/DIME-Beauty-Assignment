@@ -1,4 +1,16 @@
 .product-page {
+  margin: 1.7rem 2.5rem 0 2.5rem;
+}
+/* .product-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1px;
+  row-gap: 2.6rem;
+  margin: 0 2.5rem;
+} */
+.product-grid-container {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 2.6rem;
 }
