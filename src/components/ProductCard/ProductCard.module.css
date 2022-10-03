@@ -1,3 +1,67 @@
 .card {
-  background-color: var(--beige);
+  border-radius: 8px;
+  box-shadow: 0px 3px 15px rgb(0, 0, 0, .2);
+  margin: 2.5rem;
+  width: 155px;
+}
+.prod-img-container {
+  position: relative;
+  /* width: 155px; */
+  height: 0;
+  padding-bottom: calc(100%/(155/129))
+  /* overflow: hidden; */
+}
+.prod-img {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  border-radius: 8px 8px 0 0;
+  /* object-position: center; */
+  object-fit: cover;
+}
+.desc-container {
+  padding: 1.4rem 1rem 1rem 1rem;
+}
+.prod-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.review-container {
+  display: flex;
+  align-items: center;
+  margin: .75rem 0 0 0;
+}
+.review-container img {
+  padding-right: 0.2rem;
+}
+.review-link {
+  font-size: 0.9rem;
+  margin: 0 0 0 .2rem;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: .85rem 0 1.1rem 0;
+}
+.add-btn {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #FFF;
+  background-color: var(--charcoal);
+  border: none;
+  border-radius: 3px;
+  height: 3rem;
+  width: 100%;
+}
+.test {
+  background-image: url("https://cdn.shopify.com/s/files/1/0675/1184/5078/products/Probiotic-Gel-Cream-Tan-Listing_900x900_crop_center_076480d1-e491-4aa1-8893-aa75d0ec4146.jpg?v=1664558400");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+  width: 155px;
+  height: 129px;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Client from "shopify-buy";
 
 import ProductCard from "../../components/ProductCard/ProductCard";
+import styles from "./ProductPage.module.css";
 
 const ProductPage = () => {
   const [productsArr, setProductsArr] = useState([])
@@ -19,7 +20,7 @@ const ProductPage = () => {
 //   }, []);
 
   return (
-    <div>
+    <div className={styles["product-page"]}>
       <ProductCard />
     </div>
   );
