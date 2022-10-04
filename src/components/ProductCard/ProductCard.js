@@ -3,7 +3,11 @@ import reviewStar from "../../svg/reviewStar.svg"
 import styles from "./ProductCard.module.css";
 
 const ProductCard = (props) => {
-  const { title, price, imgLink } = props;
+  // const { title, price, imgLink, id } = props; 
+  const title = "Foam Cleanser"
+  const price = 50
+  const imgLink = "https://cdn.shopify.com/s/files/1/0675/1184/5078/products/Probiotic-Gel-Cream-Tan-Listing_900x900_crop_center_076480d1-e491-4aa1-8893-aa75d0ec4146.jpg?v=1664558400"
+
 
   return (
     <div className={styles.card}>

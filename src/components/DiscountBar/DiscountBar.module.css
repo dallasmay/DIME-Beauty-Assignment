@@ -1,0 +1,75 @@
+.discount-bar-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(300px, 100vw, 500px);
+  font-family: var(--inter);
+  background-color: var(--lightgrey);
+}
+.discount-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.4rem 0;
+  border-radius: 20px 20px 0 0;
+  color: #FFF;
+  background-color: var(--charcoal);
+}
+.discount-content-container {
+  margin: 2.3rem 2.5rem 0 2.5rem;
+}
+.price-saving-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.price-saving-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+.price-saving-number {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 1rem 0 1.9rem 0;
+}
+.progress-bar {
+  position: relative;
+  display: flex;
+  background-color: var(--beige);
+  height: 1.9rem;
+  border-radius: 9.5px;
+}
+.progress-line-flex-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: auto;
+}
+.progress-line {
+  margin: 0 .5rem 0 .5rem;
+}
+.progress-bar-filling {
+  display: inline-block;
+  background-color: var(--charcoal);
+  height: 60%;
+  width: 0%;
+  border-radius: 5px;
+  margin: auto 0rem;
+}
+.percentages-flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: auto;
+}
+.percentages {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* margin-left: 1rem;  */
+}
+/* .percentages:nth-of-type(1) {
+  margin-left: auto;
+} */
