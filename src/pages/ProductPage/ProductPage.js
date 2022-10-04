@@ -12,20 +12,19 @@ const ProductPage = () => {
     storefrontAccessToken: "df6fc859931d69c4b8a6d2fbb6ea2286",
   });
 
-//   useEffect(() => {
-//     client.product.fetchAll().then((products) => {
-//       console.log(products);
-//       setProductsArr(products)
-//     });
-//   }, []);
+  useEffect(() => {
+    client.product.fetchAll().then((products) => {
+    //   console.log(products);
+      setProductsArr(products)
+    });
+  }, []);
 
   return (
     <div className={styles["product-page"]}>
       <div className={styles["product-grid-container"]}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {productsArr.map((ele) => {
+            return <ProductCard title={ele.title} price={ele.variants[0].price} imgLink={ele.images[0].src} />
+        })}
       </div>
     </div>
   );
